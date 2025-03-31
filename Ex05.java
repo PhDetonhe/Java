@@ -16,7 +16,7 @@ public class Ex05 {
         n2 = ler.nextDouble();
         System.out.print("Qual o salario do solicitante? : ");
         n3 = ler.nextDouble();
-        salario30porcento = 30/n3 * 100;
+        salario30porcento = n3 * 0.30;
         valorparcela = n1/n2;
         if ( valorparcela <= salario30porcento ){
             System.out.println("O emprestimo foi aprovado!");
