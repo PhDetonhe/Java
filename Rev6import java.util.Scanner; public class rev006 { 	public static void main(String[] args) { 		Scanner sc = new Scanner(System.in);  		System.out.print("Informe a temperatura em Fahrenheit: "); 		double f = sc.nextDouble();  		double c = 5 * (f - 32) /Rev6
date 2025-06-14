@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class rev006 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Informe a temperatura em Fahrenheit: ");
+		double f = sc.nextDouble();
+
+		double c = 5 * (f - 32) / 9;
+
+		System.out.print("Temperatura em Celsius: " + c);
+	}
+}
