@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class rev005 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Qual seu ganho por hora? ");
+		double gh = sc.nextDouble();
+
+		System.out.print("Horas trabalhadas no mês: ");
+		double ht = sc.nextDouble();
+
+		double sl = gh * ht;
+
+		System.out.print("Salário mensal: R$" + sl);
+	}
+}
