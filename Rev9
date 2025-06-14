@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class rev009 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Área a ser pintada (em m²): ");
+		double a = sc.nextDouble();
+
+		double lt = a / 3;
+		int latts = (int) Math.ceil(lt / 18);
+		double preco = latts * 80;
+
+		System.out.print("Latas necessárias: " + latts + "\nCusto total: R$" + preco);
+	}
+}
