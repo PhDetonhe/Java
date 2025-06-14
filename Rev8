@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class rev008 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Preço por Kg: R$30,00.\nPeso total dos peixes: ");
+		double p = sc.nextDouble();
+
+		double t = p * 30;
+		double m;
+
+		if (p > 50) {
+			m = (p - 50) * 4;
+			System.out.print("Multa: R$" + m + "\nTotal com multa: R$" + (t + m));
+		} else {
+			System.out.print("Valor total a pagar: R$" + t);
+		}
+	}
+}
