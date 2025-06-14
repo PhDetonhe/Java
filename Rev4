@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class rev004 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Informe a medida em metros para conversão: ");
+		double m = sc.nextDouble();
+
+		double cm = m * 100;
+
+		System.out.print("Equivalente a: " + cm + "cm.");
+	}
+}
