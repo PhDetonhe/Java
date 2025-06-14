@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class rev007 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Qual sua altura (em metros)? ");
+		double a = sc.nextDouble();
+
+		double pi = (72.7 * a) - 58;
+
+		System.out.print("Peso ideal: " + pi);
+	}
+}
