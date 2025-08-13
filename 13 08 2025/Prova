@@ -1,0 +1,68 @@
+public class Animal {
+    String nome;
+    String especie;
+    double peso;
+    int idade;
+
+    public String getNome(){
+        return nome;
+    } public void setNome(String nome){
+        this.nome = nome;
+    } public String getEspecie(){
+        return nome;
+    } public void setEspecie(String nome){
+        this.especie = especie;
+    } public double getPeso(){
+        return peso;
+    } public void setPeso(double peso){
+        this.peso = peso;
+    } public int getIdade(){
+        return idade;
+    }public void setIdade(int idade){
+        this.idade = idade;
+    }
+
+}
+
+import java.util.Scanner;
+public class objetoAnimal {
+    public static void main(String [] args){
+        Animal objtAnimal = new Animal();
+        Scanner ler = new Scanner(System.in);
+
+
+
+        System.out.println("Insira quantas fichas de animais deseja fazer:");
+        int inf = ler.nextInt();
+        ler.nextLine();
+
+        for(int i = 0; i < inf; i++){
+            System.out.println("Insira o nome do animal:");
+            String nome = ler.nextLine();
+            System.out.println("Insira a especie do animal:");
+            String especie = ler.nextLine();
+            System.out.println("Insira a idade o animal:");
+            int idade = ler.nextInt();
+            ler.nextLine();
+            System.out.println("Insira o peso do animal:");
+            double peso = ler.nextDouble();
+
+            objtAnimal.setNome(nome);
+            ler.nextLine();
+            objtAnimal.setEspecie(especie);
+            objtAnimal.setIdade(idade);
+            objtAnimal.setPeso(peso);
+
+            System.out.println("----------ANIMAL--------------");
+            System.out.println(objtAnimal.getNome());
+            System.out.println(objtAnimal.getEspecie());
+            System.out.println(objtAnimal.getIdade());
+            System.out.println(objtAnimal.getPeso());
+
+
+
+
+        }
+    }
+}
+
