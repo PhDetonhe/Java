@@ -1,0 +1,387 @@
+public class Paciente {
+    String nome;
+    String endereco;
+    int cpf;
+    char sexo;
+    String nivelEscolaridade;
+    String email;
+    int datadeNascimento;
+    int telefone;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String nome) {
+        this.endereco = endereco;
+    }
+
+    public int getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(int peso) {
+        this.cpf = cpf;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getNivelEscolaridade() {
+        return nivelEscolaridade;
+    }
+
+    public void setNivelEscolaridade(String nivelEscolaridade) {
+        this.nivelEscolaridade = nivelEscolaridade;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getDatadeNascimento() {
+        return datadeNascimento;
+    }
+
+    public void setDatadeNascimento(int datadeNascimento) {
+        this.nivelEscolaridade = nivelEscolaridade;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(int telefone) {
+        this.telefone = telefone;
+    }
+}
+
+
+import java.util.Scanner;
+public class ObjPaciente {
+    public static void main(String [] args){
+        Scanner ler = new Scanner(System.in);
+
+        Paciente objPaciente = new Paciente();
+
+        System.out.println("Deseja fazer quantas fichas de paciente: ");
+        int info = ler.nextInt();
+
+
+
+         for(int i = 0; i < info; i++){
+             System.out.println("insira o nome do paciente:");
+             String nome = ler.nextLine();
+             ler.nextLine();
+
+             System.out.println("insira o endereço do paciente:");
+             String endereco = ler.nextLine();
+
+
+             System.out.println("insira o cpf do paciente:");
+             int cpf = ler.nextInt();
+
+
+             System.out.println("insira o sexo do paciente:");
+             char sexo = ler.next().charAt(0);
+
+
+             System.out.println("insira o nivel de escolaridade do paciente:");
+             String nivelEscolaridade = ler.nextLine();
+
+
+             System.out.println("insira o email do paciente:");
+             String email = ler.nextLine();
+
+
+             System.out.println("insira a data de nascimento do paciente:");
+             int datadeNascimento = ler.nextInt();
+
+
+             System.out.println("insira o telefone do paciente:");
+             int telefone = ler.nextInt();
+
+
+
+             objPaciente.setNome(nome);
+             ler.nextLine();
+             objPaciente.setEndereco(endereco);
+             objPaciente.setCpf(cpf);
+             objPaciente.setSexo(sexo);
+             objPaciente.setNivelEscolaridade(nivelEscolaridade);
+             objPaciente.setEmail(email);
+             objPaciente.setDatadeNascimento(datadeNascimento);
+             objPaciente.setTelefone(telefone);
+
+             System.out.println("----------paciente:--------------");
+
+             System.out.println(objPaciente.getNome());
+             System.out.println(objPaciente.getEndereco());
+             System.out.println(objPaciente.getCpf());
+             System.out.println(objPaciente.getSexo());
+             System.out.println(objPaciente.getNivelEscolaridade());
+             System.out.println(objPaciente.getEmail());
+             System.out.println(objPaciente.getDatadeNascimento());
+             System.out.println(objPaciente.getTelefone());
+
+
+
+         }
+
+    }
+}
+
+
+public class Funcionario {
+    String nome;
+    String endereco;
+    int cpf;
+    int telefone;
+    String cargo;
+    int dataAdmissao;
+    int datadeDemissao;
+    String email;
+    char sexo;
+    String niveldeEscolaridade;
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public int getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(int cpf) {
+        this.cpf = cpf;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(int telefone){
+        this.telefone = telefone;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public int getDataAdmissao() {
+        return dataAdmissao;
+    }
+
+    public void setDataAdmissao(int dataAdmissao) {
+        this.dataAdmissao = dataAdmissao;
+    }
+
+    public int getDatadeDemissao() {
+        return datadeDemissao;
+    }
+
+    public void setDatadeDemissao(int datadeDemissao) {
+        this.datadeDemissao = datadeDemissao;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getNiveldeEscolaridade() {
+        return niveldeEscolaridade;
+    }
+
+    public void setNiveldeEscolaridade(String niveldeEscolaridade) {
+        this.niveldeEscolaridade = niveldeEscolaridade;
+    }
+}
+
+
+import java.util.Scanner;
+public class ObjFuncionario {
+
+    public static void main(String [] args){
+        Scanner ler = new Scanner(System.in);
+
+        Funcionario objFuncionario = new Funcionario();
+
+        System.out.println("Deseja fazer quantas fichas de funcionario: ");
+        int info = ler.nextInt();
+
+
+
+        for(int i = 0; i < info; i++){
+            System.out.println("insira o nome do paciente:");
+            String nome = ler.nextLine();
+            ler.nextLine();
+
+            System.out.println("insira o endereço do paciente:");
+            String endereco = ler.nextLine();
+
+
+            System.out.println("insira o cpf do paciente:");
+            int cpf = ler.nextInt();
+
+
+            System.out.println("insira o sexo do paciente:");
+            char sexo = ler.next().charAt(0);
+
+
+            System.out.println("insira o nivel de escolaridade do paciente:");
+            String nivelEscolaridade = ler.nextLine();
+
+
+            System.out.println("insira o email do paciente:");
+            String email = ler.nextLine();
+
+            System.out.println("insira o cargo do paciente:");
+            String cargo = ler.nextLine();
+
+            System.out.println("insira a data de admissao do paciente:");
+            int dataAdmissao= ler.nextInt();
+
+            System.out.println("insira a data de admissao do paciente:");
+            int dataDemissao= ler.nextInt();
+
+            System.out.println("insira o telefone do paciente:");
+            int telefone = ler.nextInt();
+
+
+
+            objFuncionario.setNome(nome);
+            ler.nextLine();
+            objFuncionario.setEndereco(endereco);
+            objFuncionario.setCpf(cpf);
+            objFuncionario.setSexo(sexo);
+            objFuncionario.setNiveldeEscolaridade(nivelEscolaridade);
+            objFuncionario.setEmail(email);
+            objFuncionario.setDataAdmissao(dataAdmissao);
+            objFuncionario.setTelefone(telefone);
+            objFuncionario.setCargo(cargo);
+            objFuncionario.setDatadeDemissao(dataDemissao);
+
+
+
+            System.out.println("----------Funcionario:--------------");
+
+            System.out.println(objFuncionario.getNome());
+            System.out.println(objFuncionario.getEndereco());
+            System.out.println(objFuncionario.getCpf());
+            System.out.println(objFuncionario.getSexo());
+            System.out.println(objFuncionario.getNiveldeEscolaridade());
+            System.out.println(objFuncionario.getEmail());
+            System.out.println(objFuncionario.getTelefone());
+            System.out.println(objFuncionario.getCargo());
+            System.out.println(objFuncionario.getDataAdmissao());
+            System.out.println(objFuncionario.getDatadeDemissao());
+
+        }
+    }
+}
+
+
+public class convenio {
+    String nome;
+    String plano;
+    double tarifa;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getPlano() {
+        return plano;
+    }
+
+    public void setPlano(String plano) {
+        this.plano = plano;
+    }
+
+    public double getTarifa() {
+        return tarifa;
+    }
+
+    public void setTarifa(double tarifa) {
+        this.tarifa = tarifa;
+    }
+}
+
+import java.util.Scanner;
+public class ObjConvenio {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+
+        convenio objConvenio = new convenio();
+
+        System.out.println("insira o nome do convenio:");
+        String nome = ler.nextLine();
+        ler.nextLine();
+
+        System.out.println("insira o plano do convenio:");
+        String plano = ler.nextLine();
+
+        System.out.println("insira a tarifa do convenio:");
+        double tarifa = ler.nextDouble();
+
+        objConvenio.setNome(nome);
+        ler.nextLine();
+        objConvenio.setPlano(plano);
+        objConvenio.setTarifa(tarifa);
+
+        System.out.println("----------Funcionario:--------------");
+        System.out.println(objConvenio.getNome());
+        System.out.println(objConvenio.getPlano());
+        System.out.println(objConvenio.getTarifa());
+    }
+}
